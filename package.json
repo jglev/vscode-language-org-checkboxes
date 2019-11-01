@@ -4,6 +4,8 @@
   "description": "Adds coloring for bullet-journal-style checkbox items to org-mode files",
   "version": "0.0.1",
   "publisher": "publicus",
+  "repository": "https://github.com/publicus/vscode-language-org-checkboxes",
+  "license": "BSD-3",
   "engines": {
     "vscode": "^1.38.0"
   },
