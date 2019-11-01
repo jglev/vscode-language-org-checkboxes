@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>Jacob Levernier</string>
+	<key>comment</key>
+	<string>For org-checkboxes.</string>
+	<key>name</key>
+	<string>Org Checkboxes</string>
+	<key>settings</key>
+	<array>
+    <dict>
+      <key>name</key>
+      <string>General Styling</string>
+      <key>scope</key>
+      <string>keyword.checkbox-todo, keyword.checkbox-malformed, keyword.checkbox-next, keyword.checkbox-migrated, keyword.checkbox-right_now, keyword.checkbox-waiting, keyword.checkbox-done, keyword.checkbox-strikethrough, keyword.bullet, keyword.event</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string>bold</string>
+        <key>fontFamily</key>
+        <string>monospace</string>
+        <key>fontSize</key>
+        <string>1.05em</string>
+        <key>paddingLeft</key>
+        <string>5px</string>
+        <key>paddingRight</key>
+        <string>5px</string>
+        <key>borderRadius</key>
+        <string>5px</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Checkbox Background Color</string>
+      <key>scope</key>
+      <string>keyword.checkbox-todo, keyword.checkbox-next, keyword.checkbox-migrated, keyword.checkbox-right_now, keyword.checkbox-waiting, keyword.checkbox-done, keyword.checkbox-strikethrough, keyword.event</string>
+      <key>settings</key>
+      <dict>
+        <key>background</key>
+        <string>#B130BAEB</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>scope</key>
+      <string>keyword.checkbox-todo</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#FF0000</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>scope</key>
+      <string>keyword.checkbox-malformed</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#FF00FF</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>scope</key>
+      <string>keyword.checkbox-right_now</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#0000FF</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>scope</key>
+      <string>keyword.checkbox-next</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#0000FF</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>scope</key>
+      <string>keyword.checkbox-migrated</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#9370D8</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>scope</key>
+      <string>keyword.checkbox-waiting</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#FFA500</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>scope</key>
+      <string>keyword.checkbox-done</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#90EE90</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>scope</key>
+      <string>keyword.checkbox-strikethrough</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#82d882</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>scope</key>
+      <string>keyword.strikethrough-text</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string>italic</string>
+        <key>foreground</key>
+        <string>#00000070</string>
+      </dict>
+    </dict>
+	</array>
+	<key>uuid</key>
+	<string>231D6A91-54D1-4CBE-BD2A-0F36C08693B1</string>
+</dict>
+</plist>
