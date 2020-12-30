@@ -70,92 +70,92 @@ The package extends existing highlighters for `org-mode` and `markdown` syntax.
 1. (Optional) Enable color highlighting:
   1. In VSCode, from the Command Palette (`Cmd + Shift + P` or `Ctrl + Shift + P`), run "`Preferences: Open Settings (JSON)`".
   2. Add the following within the outermost curly braces (`{`...`}`) of the JSON file that opens[^1]:
-  ```
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": ["keyword.checkbox-todo"],
-        "settings": {
-          "foreground": "#FF0000",
-          "fontStyle": "bold"
-        }
-      },
-      {
-        "scope": ["keyword.event"],
-        "settings": {
-          "foreground": "#6E3500",
-          "fontStyle": "bold"
-        }
-      },
-      {
-        "scope": ["keyword.checkbox-malformed"],
-        "settings": {
-          "foreground": "#FF00FF",
-          "fontStyle": "bold"
-        }
-      },
-      {
-        "scope": ["keyword.checkbox-right_now"],
-        "settings": {
-          "foreground": "#0000FF",
-          "fontStyle": "bold"
-        }
-      },
-      {
-        "scope": ["keyword.checkbox-next"],
-        "settings": {
-          "foreground": "#0000FF",
-          "fontStyle": "bold"
-        }
-      },
-      {
-        "scope": ["keyword.checkbox-migrated"],
-        "settings": {
-          "foreground": "#9370D8",
-          "fontStyle": "bold"
-        }
-      },
-      {
-        "scope": ["keyword.checkbox-waiting"],
-        "settings": {
-          "foreground": "#FFA500",
-          "fontStyle": "bold"
-        }
-      },
-      {
-        "scope": ["keyword.checkbox-done"],
-        "settings": {
-          "foreground": "#90EE90",
-          "fontStyle": "bold"
-        }
-      },
-      {
-        "scope": ["keyword.checkbox-strikethrough"],
-        "settings": {
-          "foreground": "#82d882",
-          "fontStyle": "bold"
-        }
-      },
-      {
-        "scope": ["keyword.strikethrough-text"],
-        "settings": {
-          "fontStyle": "italic",
-          "foreground": "#00000070",
-        }
-      },
-      {
-        "scope": ["keyword.bullet"],
-        "settings": {
-          "fontStyle": "bold"
-        }
+      ```
+      "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          {
+            "scope": ["keyword.checkbox-todo"],
+            "settings": {
+              "foreground": "#FF0000",
+              "fontStyle": "bold"
+            }
+          },
+          {
+            "scope": ["keyword.event"],
+            "settings": {
+              "foreground": "#6E3500",
+              "fontStyle": "bold"
+            }
+          },
+          {
+            "scope": ["keyword.checkbox-malformed"],
+            "settings": {
+              "foreground": "#FF00FF",
+              "fontStyle": "bold"
+            }
+          },
+          {
+            "scope": ["keyword.checkbox-right_now"],
+            "settings": {
+              "foreground": "#0000FF",
+              "fontStyle": "bold"
+            }
+          },
+          {
+            "scope": ["keyword.checkbox-next"],
+            "settings": {
+              "foreground": "#0000FF",
+              "fontStyle": "bold"
+            }
+          },
+          {
+            "scope": ["keyword.checkbox-migrated"],
+            "settings": {
+              "foreground": "#9370D8",
+              "fontStyle": "bold"
+            }
+          },
+          {
+            "scope": ["keyword.checkbox-waiting"],
+            "settings": {
+              "foreground": "#FFA500",
+              "fontStyle": "bold"
+            }
+          },
+          {
+            "scope": ["keyword.checkbox-done"],
+            "settings": {
+              "foreground": "#90EE90",
+              "fontStyle": "bold"
+            }
+          },
+          {
+            "scope": ["keyword.checkbox-strikethrough"],
+            "settings": {
+              "foreground": "#82d882",
+              "fontStyle": "bold"
+            }
+          },
+          {
+            "scope": ["keyword.strikethrough-text"],
+            "settings": {
+              "fontStyle": "italic",
+              "foreground": "#00000070",
+            }
+          },
+          {
+            "scope": ["keyword.bullet"],
+            "settings": {
+              "fontStyle": "bold"
+            }
+          }
+        ]
       }
-    ]
-  }
-  ```
+      ```
 
-  You can customize the settings above. To see which "scope" to which a given element in your `org-mode` or `markdown` file corresponds, open the Command Palette, run `Developer: Inspect Editor Tokens and Scopes`, and move your text cursor to be over the checkbox in question.
+      You can customize the settings above. To see which "scope" to which a given element in your `org-mode` or `markdown` file corresponds, open the Command Palette, run `Developer: Inspect Editor Tokens and Scopes`, and move your text cursor to be over the checkbox in question.
 
-  [^1]: This [currently must be done manually](https://github.com/microsoft/vscode/issues/97753#issuecomment-629135629).
+      [^1]: This [currently must be done manually](https://github.com/microsoft/vscode/issues/97753#issuecomment-629135629).
 1. In VSCode, set the language for the document as `Org` or `Markdown`.
 
 I suggest this `org-mode`-based style for bullet-journal entries:
