@@ -2,15 +2,21 @@
   "name": "org-checkbox",
   "displayName": "org-checkbox",
   "description": "Adds coloring for bullet-journal-style checkbox items to org-mode files",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "publisher": "publicus",
   "repository": "https://github.com/publicus/vscode-language-org-checkboxes",
-  "license": "BSD-3",
   "engines": {
     "vscode": "^1.38.0"
   },
   "categories": [
     "Programming Languages"
+  ],
+  "keywords": [
+    "todo",
+    "org-mode",
+    "list",
+    "organizer",
+    "bullet"
   ],
   "contributes": {
     "grammars": [
@@ -27,13 +33,6 @@
         "injectTo": [
           "text.html.markdown"
         ]
-      }
-    ],
-    "themes": [
-      {
-        "label": "Org-mode Checkbox Highlighting",
-        "uiTheme": "vs",
-        "path": "./solarized-light-color-theme.json"
       }
     ]
   }

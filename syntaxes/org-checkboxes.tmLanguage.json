@@ -13,34 +13,34 @@
       "patterns": [
         {
           "name": "keyword.checkbox-todo.org",
-          "match": "\\s*[\\-\\*\\+]\\s*\\[ \\](?=\\s)"
+          "match": "^\\s*[\\-\\*\\+]\\s*(\\[ \\]|TO[-\\s_]{0,1}DO)(?=\\s)"
         },
         {
           "match": "^\\s*[\\-\\*\\+]\\s*\\[\\](?=\\s)",
           "name": "keyword.checkbox-malformed.org"
         },
         {
-          "match": "^\\s*[\\-\\*\\+]\\s*\\[[Xx]\\](?=\\s)",
+          "match": "^\\s*[\\-\\*\\+]\\s*(\\[[Xx]\\]|DONE(?![-\\s_]{0,1}LATER))(?=\\s)",
           "name": "keyword.checkbox-done.org"
         },
         {
-          "match": "^\\s*[\\-\\*\\+]\\s*\\[>\\](?=\\s)",
+          "match": "^\\s*[\\-\\*\\+]\\s*(\\[>\\]|NEXT)(?=\\s)",
           "name": "keyword.checkbox-next.org"
         },
         {
-          "match": "^\\s*[\\-\\*\\+]\\s*\\[<\\](?=\\s)",
+          "match": "^\\s*[\\-\\*\\+]\\s*(\\[<\\]|MIGRATED|MOVED)(?=\\s)",
           "name": "keyword.checkbox-migrated.org"
         },
         {
-          "match": "^\\s*[\\-\\*\\+]\\s*\\[[/]\\](?=\\s)",
+          "match": "^\\s*[\\-\\*\\+]\\s*(\\[[/]\\]|RIGHT[-\\s_]{0,1}NOW|NOW|IN[-\\s_]{0,1}PROGRESS)(?=\\s)",
           "name": "keyword.checkbox-right_now.org"
         },
         {
-          "match": "^\\s*[\\-\\*\\+]\\s*\\[[Oo]\\](?=\\s)",
+          "match": "^\\s*[\\-\\*\\+]\\s*(\\[[Oo]\\]|BLOCKED|WAITING)(?=\\s)",
           "name": "keyword.checkbox-waiting.org"
         },
         {
-          "match": "(^\\s*[\\-\\*\\+]\\s*\\[-\\])\\s+(.*$)",
+          "match": "(^\\s*[\\-\\*\\+]\\s*(\\[-\\])|CANCELED|CANCELLED)\\s+(.*$)",
           "captures": {
             "1": {
               "name": "keyword.checkbox-strikethrough.org"
@@ -51,23 +51,23 @@
           }
         },
         {
-          "match": "(^\\s*[\\-\\*\\+]\\s*\\[[Vv]\\])\\s+.*(\\(.*?\\))\\s+$",
+          "match": "(^\\s*[\\-\\*\\+]\\s*(\\[[Vv]\\]|DONE[-\\s_]{0,1}LATER))\\s+.*(\\(.*?\\))\\s+$",
           "captures": {
             "1": {
               "name": "keyword.checkbox-done.org"
             },
-            "2": {
+            "3": {
               "name": "keyword.checkbox-done.org"
             }
           }
         },
         {
-          "match": "^\\s*[\\-\\*\\+]\\s*[Oo](?=\\s)",
-          "name": "event"
+          "match": "^\\s*[\\-\\*\\+]\\s*([Oo]|EVENT)(?=\\s)",
+          "name": "keyword.event"
         },
         {
           "match": "^\\s*[\\-\\+]\\s*",
-          "name": "bullet"
+          "name": "keyword.bullet"
         }
       ]
     }
